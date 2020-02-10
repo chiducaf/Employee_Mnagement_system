@@ -8,6 +8,6 @@ ARG SSL_KEYSTORE_PASSWORD
 
 USER root
 
-RUN apt-get update  
+RUN apk update  
 
 CMD ["-g"]
