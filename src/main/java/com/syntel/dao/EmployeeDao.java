@@ -1,0 +1,16 @@
+package com.syntel.dao;
+
+
+
+
+
+import java.util.List;
+
+import com.syntel.dto.Employee;
+
+
+public interface EmployeeDao {
+
+	public List<Employee> getAllDetails();
+
+}
