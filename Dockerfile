@@ -1,13 +1,15 @@
-From ringcentral/jdk
+FROM openjdk:8
 
 MAINTAINER ="Atos"
 
-LABEL "customized"="Customization image for gitlab using with apache2 service"
+LABEL "customized"="Customization image for GKE with Jenkins X"
 
-ARG SSL_KEYSTORE_PASSWORD
+#ARG SSL_KEYSTORE_PASSWORD
 
-USER root
+USER admin
+COPY target/EmployeeManagementSystem.war EmployeeManagementSystem.war
+EXPOSE 9090
 
-RUN apk update  
-
-CMD ["-g"]
+#RUN apk update  
+ENTRYPOINT ["java","-jar","EmployeeManagementSystem.war"]
+#CMD ["-g"]
