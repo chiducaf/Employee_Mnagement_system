@@ -3,7 +3,7 @@
 	<groupId>com.syntel</groupId>
 	<artifactId>EmployeeManagementSystem</artifactId>
     <packaging>war</packaging>
-	<version>1.8-SNAPSHOT</version>
+	<version>1.8.5</version>
 	<name>EmployeeManagementSystem Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	<parent>
